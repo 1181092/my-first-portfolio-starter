@@ -151,7 +151,7 @@ section {
   height: 100%;
   border-radius: 24px;
   background-color: white;
-  box-shadow: 0 6px 64px rgba(112, 144, 176, 0.1);
+  box-shadow: 0 6px 64px rgba(112, 144, 176, 0.1);;
 }
 
 .project-card-title {
@@ -232,6 +232,10 @@ section {
 .button-secondary-rounded:hover {
   color: white !important;
   background-color: var(--color-primary);
+}
+
+.get-in-touch {
+  text-align: center;
 }
 
 .social {
