@@ -144,6 +144,10 @@ section {
   margin-bottom: 200px;
 }
 
+.row {
+  row-gap: 25px;
+}
+
 .project-card {
   display: flex;
   align-items: center;
