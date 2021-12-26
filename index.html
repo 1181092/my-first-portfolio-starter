@@ -23,8 +23,9 @@
     <!-- import font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- import the webpage's stylesheets -->
+    <link id="theme" rel="stylesheet" type="text/css" href="light-theme.css" />
+    <!-- <link rel="stylesheet" href="dark-theme.css" /> -->
 
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
@@ -44,6 +45,10 @@
         </nav>
     </div>
 
+    <!-- dark/light theme button -->
+
+    <button id="theme-toggle">Dark mode</button>
+
     <!-- Back to TOP button-->
 
     <button onclick="topFunction()" id="btn-top" title="Go to top">Top</button>
@@ -51,6 +56,9 @@
     <script>
         //Get the button
         var mybutton = document.getElementById("btn-top");
+        var themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.style.display = "block";
 
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
@@ -71,6 +79,8 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+
+
 
     <!-- the wrapper and content divs set margins and positioning -->
     <div class="wrapper">
