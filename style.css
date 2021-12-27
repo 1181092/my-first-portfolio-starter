@@ -298,10 +298,11 @@ section {
     background-repeat: no-repeat;
     margin: 0 15px;
     transition: 0.3s ease 0s;
+    border-radius: 50%;
 }
 
 .social:hover {
-    box-shadow: 8px 11px 3px cornsilk;
+    box-shadow: 8px 11px 3px var(--color-shadow);
     transform: translateY(-7px);
 }
 

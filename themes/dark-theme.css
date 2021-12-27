@@ -1,9 +1,10 @@
 @import "style.css";
 :root {
     --color-bg: #121212;
-    --color-text-primary: #828282;
+    --color-text-primary: #e9e9e9;
     --color-text-secondary: #f9faff;
     --color-primary: #928df1;
     --color-secondary: #fdc435;
-    --color-bg-card: #3f3351;
+    --color-bg-card: #292929;
+    --color-shadow: rgba(39, 39, 39, 0.5);
 }
