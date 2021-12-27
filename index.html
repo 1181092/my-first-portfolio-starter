@@ -47,40 +47,11 @@
 
     <!-- dark/light theme button -->
 
-    <button id="theme-toggle">Dark mode</button>
+    <button id="theme-toggle" class="button">Dark mode</button>
 
     <!-- Back to TOP button-->
 
-    <button onclick="topFunction()" id="btn-top" title="Go to top">Top</button>
-
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("btn-top");
-        var themeToggle = document.getElementById("theme-toggle");
-
-        themeToggle.style.display = "block";
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-
-
+    <button onclick="topFunction()" id="btn-top" class="button" title="Go to top">Top ↑</button>
 
     <!-- the wrapper and content divs set margins and positioning -->
     <div class="wrapper">
@@ -93,7 +64,8 @@
                         I'm an <span> engineering student </span> with a passion for programming and web design.
                     </p>
                     <a href="http://www.github.com/margmelo" target="_blank" class="button button-primary"> Github </a>
-                    <a href="http://www.linkedin.com/margmelo" target="_blank" class="button button-secondary"> LinkedIn </a>
+                    <a href="http://www.linkedin.com/margmelo" target="_blank" class="button button-secondary"> LinkedIn
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <img src="assets/dev.png" alt="Draw of a woman sitting at a computer, problably a developer" class="intro-img" />
@@ -194,8 +166,8 @@
                             </div>
                             <div class="text-right">
                                 <button type="submit" class="button button-primary">
-                  Submit
-                </button>
+                                    Submit
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -211,6 +183,33 @@
             <a href="http://instagram.com/mmarg.melo" target="_blank" class="social instagram"></a>
         </div>
     </footer>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("btn-top");
+        var themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.style.display = "block";
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
