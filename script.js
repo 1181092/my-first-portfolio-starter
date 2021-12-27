@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
         // if it's light -> go dark
         if (themeStylesheet.href.includes('light')) {
-            themeStylesheet.href = 'dark-theme.css'
+            themeStylesheet.href = 'themes/dark-theme.css'
             themeToggle.innerText = 'Light mode'
         } else {
             // if it's dark -> go light
-            themeStylesheet.href = 'light-theme.css'
+            themeStylesheet.href = 'themes/light-theme.css'
             themeToggle.innerText = 'Dark mode'
         }
     })

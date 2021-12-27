@@ -1,0 +1,9 @@
+@import "style.css";
+:root {
+    --color-bg: #f9faff;
+    --color-text-primary: #828282;
+    --color-text-secondary: #333333;
+    --color-primary: #928df1;
+    --color-secondary: #fdc435;
+    --color-bg-card: #ffffff;
+}
